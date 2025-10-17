@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangPals - Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gradient-to-br from-indigo-100 via-purple-50 to-indigo-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white px-8 py-4 shadow-sm z-0">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-indigo-900"></div>
+            <ul class="flex gap-8 items-center">
+                <li><a href="home.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Home</a></li>
+                <li><a href="profile.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Profile</a></li>
+                <li><a href="settings.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Decorative circles -->
+    <div class="relative overflow-hidden min-h-screen pb-20">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-purple-300 rounded-full opacity-30-translate-x-48 -translate-y-48"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-300 rounded-full opacity-30 translate-x-48 translate-y-48"></div>
+    <!-- Main Content -->
+    <main class="relative z-10 max-w-4xl mx-auto px-6 py-12">
+        <!-- Profile Header Card -->
+        <div class="bg-white rounded-3xl p-8 shadow-xl mb-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-6">
+                    <img src="/src/public/images/men.png" alt="John Garcia" class="w-20 h-20 rounded-full object-cover border-4 border-indigo-900">
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-900">John Garcia</h1>
+                        <p class="text-gray-600 text-sm">Manila, Philippines</p>
+                    </div>
+                </div>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 text-sm font-medium transition-colors">Edit Profile</button>
+            </div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div class="space-y-6">
+                <!-- Language Details Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Language Details</h2>
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm text-gray-700">Native Language:</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm font-semibold text-gray-900">Tagalog</span>
+                            <span class="text-lg">🇵🇭</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-700">Learning:</span>
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm font-semibold text-gray-900">English</span>
+                            <span class="text-lg">🇺🇸</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interest Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Interest</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-medium">Cooking</span>
+                        <span class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium">Boxing</span>
+                        <span class="bg-yellow-500 text-white px-4 py-2 rounded-full text-sm font-medium">Gaming</span>
+                        <span class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">Painting</span>
+                    </div>
+                </div>
+
+                <!-- Bio/About me Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Bio/About me</h2>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        <!-- Empty bio section -->
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+                <!-- Progress Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <h2 class="text-lg font-bold text-gray-900 mb-6">Progress</h2>
+                    <div class="flex justify-center">
+                        <div class="relative w-48 h-48">
+                            <!-- Progress Circle -->
+                            <svg class="transform -rotate-90 w-48 h-48">
+                                <circle cx="96" cy="96" r="88" stroke="#e5e7eb" stroke-width="16" fill="none"></circle>
+                                <circle cx="96" cy="96" r="88" stroke="#6366f1" stroke-width="16" fill="none" 
+                                        stroke-dasharray="552.92" stroke-dashoffset="138.23" stroke-linecap="round"></circle>
+                            </svg>
+                            <!-- Center Text -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-sm text-gray-600 font-medium">English</span>
+                                <span class="text-3xl font-bold text-indigo-900">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activities Card -->
+                <div class="bg-white rounded-3xl p-6 shadow-xl">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Recent Activities</h2>
+                    <div class="space-y-4">
+                        <div class="text-sm text-gray-700">
+                            <p class="font-medium">May 30 - Quiz: Food</p>
+                            <p class="text-gray-600">Completed 100% Conversation</p>
+                        </div>
+                    </div>
+                    <button class="mt-4 bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 text-sm font-medium transition-colors w-full">Settings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

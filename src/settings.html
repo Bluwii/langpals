@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangPals - Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gradient-to-br from-indigo-100 via-purple-50 to-indigo-100 min-h-screen">
+     <!-- Navigation -->
+    <nav class="bg-white px-8 py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold text-indigo-900"></div>
+            <ul class="flex gap-8 items-center">
+                <li><a href="home.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Home</a></li>
+                <li><a href="profile.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Profile</a></li>
+                <li><a href="settings.html" class="text-gray-700 hover:text-gray-900 text-sm font-medium">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-indigo-900 text-white py-12 px-6">
+            <nav class="space-y-6">
+                <a href="#" class="block text-white font-medium hover:text-purple-200 transition-colors">Account</a>
+                <a href="#" class="block text-white font-medium hover:text-purple-200 transition-colors">Notifications</a>
+                <a href="#" class="block text-white font-medium hover:text-purple-200 transition-colors">Privacy</a>
+                <a href="#" class="block text-white font-medium hover:text-purple-200 transition-colors">App language</a>
+                <a href="#" class="block text-white font-medium hover:text-purple-200 transition-colors">About</a>
+                <a href="index.html" class="block text-white font-medium hover:text-purple-200 transition-colors">Log Out</a>
+            </nav>
+        </aside>
+
+        <!-- Main Settings Content -->
+        <main class="flex-1 p-12">
+            <div class="max-w-3xl">
+                <!-- Account Settings Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Account Settings</h2>
+                    <div class="flex gap-4">
+                        <button class="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 text-sm font-semibold transition-colors">Edit Profile</button>
+                        <button class="bg-white text-gray-700 px-8 py-3 rounded-full hover:bg-gray-100 text-sm font-semibold transition-colors border border-gray-300">Change Password</button>
+                    </div>
+                </div>
+
+                <!-- App Preferences Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl mb-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">App Preferences</h2>
+                    
+                    <!-- Notifications Toggle -->
+                    <div class="flex justify-between items-center mb-6 pb-6 border-b border-gray-200">
+                        <span class="text-gray-700 font-medium">Notifications</span>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer">
+                            <div class="w-14 h-7 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[4px] after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-gray-400"></div>
+                        </label>
+                    </div>
+
+                    <!-- App Language Selector -->
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-700 font-medium">App Language</span>
+                        <button class="flex items-center gap-2 bg-gray-100 text-gray-900 px-6 py-2 rounded-full hover:bg-gray-200 text-sm font-medium transition-colors border border-gray-300">
+                            <span>English</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Privacy & Security Card -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Privacy & Security</h2>
+                    <div class="space-y-4">
+                        <a href="#" class="block text-gray-700 font-medium hover:text-gray-900 transition-colors">Blocked Users</a>
+                        <a href="#" class="block text-gray-700 font-medium hover:text-gray-900 transition-colors">Data & Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
