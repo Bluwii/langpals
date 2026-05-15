@@ -5,28 +5,28 @@ const matches = [
         country: "Japan",
         flag: "🇯🇵",
         language: "ENGLISH",
-        image: "/src/public/images/girl1.png"
+        image: "src/public/images/girl1.png"
     },
     {
         name: "Robert",
         country: "Germany",
         flag: "🇩🇪",
         language: "GERMAN",
-        image: "/src/public/images/men.png"
+        image: "src/public/images/men.png"
     },
     {
         name: "Sofia",
         country: "Russia",
         flag: "🇷🇺",
         language: "RUSSIAN",
-        image: "/src/public/images/girl2.png"
+        image: "src/public/images/girl2.png"
     },
     {
         name: "Yuki",
         country: "Japan",
         flag: "🇯🇵",
         language: "JAPANESE",
-        image: "/src/public/images/girl1.png"
+        image: "src/public/images/girl1.png"
     }
 ];
 
